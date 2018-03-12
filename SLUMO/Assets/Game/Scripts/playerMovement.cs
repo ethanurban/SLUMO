@@ -35,10 +35,6 @@ public class playerMovement : MonoBehaviour {
             float angle = Mathf.Atan2(h, v) * Mathf.Rad2Deg; //the angle I need to face is this
             transform.localEulerAngles = new Vector3(0, -angle + 90, 0); //set facing direction to this angle
         }
-        if (transform.position.y < 606) //if I am below the water
-        {
-            lost = true;
-            //TODO also place me on cube outside of playing area depending on rank
-        }
+        
     }
 }
