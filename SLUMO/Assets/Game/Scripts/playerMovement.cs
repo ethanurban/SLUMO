@@ -28,7 +28,7 @@ public class playerMovement : MonoBehaviour {
         if (!lost) //if I am still in the playing field
         {
             Vector3 movementSpeed = new Vector3(Input.GetAxisRaw("L_XAxis_" + playerNum), 0, -(Input.GetAxisRaw("L_YAxis_" + playerNum))); //movement speed is the XY values of analog stick state
-            rb.velocity += movementSpeed / 2;
+            rb.velocity += movementSpeed / 1;
 
             float h = Input.GetAxis("L_XAxis_" + playerNum); //piece of the angle I need to face is X value from analog stick state
             float v = Input.GetAxis("L_YAxis_" + playerNum); //piece of the angle I need to face is Y value from analog stick state
