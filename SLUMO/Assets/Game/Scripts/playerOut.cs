@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class playerOut : MonoBehaviour
 {
-    public GameObject p1
+    public GameObject p1;
+
     private void OnTriggerEnter(Collider other)
+
     {
         
     }
