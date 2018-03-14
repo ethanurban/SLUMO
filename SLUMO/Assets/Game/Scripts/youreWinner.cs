@@ -41,11 +41,11 @@ public class youreWinner : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (p1.transform.position.y < 625)
+        if (p1.transform.position.y < 626)
         {
-            if (p2.transform.position.y < 625)
+            if (p2.transform.position.y < 626)
             {
-                if (p3.transform.position.y < 625)
+                if (p3.transform.position.y < 626)
                 {
                     //PLAYER 4 WINS
                     Debug.Log("player 4 wins");
@@ -61,7 +61,7 @@ public class youreWinner : MonoBehaviour {
 
                 }
 
-                else if (p4.transform.position.y < 625)
+                else if (p4.transform.position.y < 626)
 
                 {
                     //PLAYER 3 WINS
@@ -78,7 +78,7 @@ public class youreWinner : MonoBehaviour {
                 }
             }
 
-            else if (p3.transform.position.y < 625 && p4.transform.position.y < 625)
+            else if (p3.transform.position.y < 626 && p4.transform.position.y < 626)
             {
                 //PLAYER 2 WINS
                 Debug.Log("player 2 wins");
@@ -95,7 +95,7 @@ public class youreWinner : MonoBehaviour {
 
         }
 
-        else if (p3.transform.position.y < 625 && p4.transform.position.y < 625 && p2.transform.position.y < 625)
+        else if (p3.transform.position.y < 626 && p4.transform.position.y < 628 && p2.transform.position.y < 626)
 
         {
             //PLAYER 1 WINS
@@ -121,25 +121,25 @@ public class youreWinner : MonoBehaviour {
         //PLAYER IS OUT functions
 
         //player one out!
-        if (p1.transform.position.y < 625)
+        if (p1.transform.position.y < 628)
         {
             p1out.gameObject.SetActive(true);
         }
 
         //player two out!
-        if (p2.transform.position.y < 625)
+        if (p2.transform.position.y < 628)
         {
             p2out.gameObject.SetActive(true);
         }
 
         //player three out!
-        if (p3.transform.position.y < 625)
+        if (p3.transform.position.y < 628)
         {
             p3out.gameObject.SetActive(true);
         }
 
         //player four out!
-        if (p4.transform.position.y < 625)
+        if (p4.transform.position.y < 628)
         {
             p4out.gameObject.SetActive(true);
         }
