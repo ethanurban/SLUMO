@@ -726,7 +726,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2946,11 +2946,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Kirby: Gourmet Race
+  m_Text: 'Final Fantasy Victory Theme
 
-    Final Fantasy Victory Theme
+    Africa - Toto (8 bit)
 
-    Africa - Toto (8 bit)'
+    Nitro Fun - Turbo Penguin'
 --- !u!222 &1658108034
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3045,7 +3045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1785894000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3107,8 +3107,8 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -4.715, y: 0.000011444001}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -4.7149963, y: 0.000011444092}
   m_SizeDelta: {x: 9.43, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835785603
@@ -3158,7 +3158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1962320036
 RectTransform:
   m_ObjectHideFlags: 0
