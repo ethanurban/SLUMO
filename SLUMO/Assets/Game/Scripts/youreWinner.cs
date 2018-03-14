@@ -15,23 +15,37 @@ public class youreWinner : MonoBehaviour {
     public GameObject wintext3;
     public GameObject wintext4;
 
+    //player out elements
+    public GameObject p1out;
+    public GameObject p2out;
+    public GameObject p3out;
+    public GameObject p4out;
+
     //music
     public GameObject winMusic;
     public AudioSource gameMusic;
+
+    //Exit Button
+    public GameObject EXIT;
+
+
+
+
 
 
     // Use this for initialization
     void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (p1.transform.position.y < 600)
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (p1.transform.position.y < 625)
         {
-            if (p2.transform.position.y < 600)
+            if (p2.transform.position.y < 625)
             {
-                if (p3.transform.position.y < 600)
+                if (p3.transform.position.y < 625)
                 {
                     //PLAYER 4 WINS
                     Debug.Log("player 4 wins");
@@ -40,11 +54,14 @@ public class youreWinner : MonoBehaviour {
                     //win music
                     winMusic.gameObject.SetActive(true);
 
-                    gameMusic.volume = 0;
+                    //mute music
+                    gameMusic.mute = true;
+
+                    EXIT.gameObject.SetActive(true);
 
                 }
 
-                else if (p4.transform.position.y < 600)
+                else if (p4.transform.position.y < 625)
 
                 {
                     //PLAYER 3 WINS
@@ -54,11 +71,14 @@ public class youreWinner : MonoBehaviour {
                     //win music
                     winMusic.gameObject.SetActive(true);
 
-                    gameMusic.volume = 0;
+                    //mute music
+                    gameMusic.mute = true;
+
+                    EXIT.gameObject.SetActive(true);
                 }
             }
 
-            else if (p3.transform.position.y < 600 && p4.transform.position.y < 600)
+            else if (p3.transform.position.y < 625 && p4.transform.position.y < 625)
             {
                 //PLAYER 2 WINS
                 Debug.Log("player 2 wins");
@@ -67,13 +87,16 @@ public class youreWinner : MonoBehaviour {
                 //win music
                 winMusic.gameObject.SetActive(true);
 
-                gameMusic.volume = 0;
+                //mute music
+                gameMusic.mute = true;
+
+                EXIT.gameObject.SetActive(true);
             }
 
         }
 
-        else if (p3.transform.position.y < 600 && p4.transform.position.y < 600 && p2.transform.position.y < 600)
-            
+        else if (p3.transform.position.y < 625 && p4.transform.position.y < 625 && p2.transform.position.y < 625)
+
         {
             //PLAYER 1 WINS
             Debug.Log("player 1 wins");
@@ -83,7 +106,42 @@ public class youreWinner : MonoBehaviour {
             //win music
             winMusic.gameObject.SetActive(true);
 
-            gameMusic.volume = 0;
+            //mute music
+            gameMusic.mute = true;
+
+            EXIT.gameObject.SetActive(true);
+        }
+
+
+
+
+
+
+
+        //PLAYER IS OUT functions
+
+        //player one out!
+        if (p1.transform.position.y < 625)
+        {
+            p1out.gameObject.SetActive(true);
+        }
+
+        //player two out!
+        if (p2.transform.position.y < 625)
+        {
+            p2out.gameObject.SetActive(true);
+        }
+
+        //player three out!
+        if (p3.transform.position.y < 625)
+        {
+            p3out.gameObject.SetActive(true);
+        }
+
+        //player four out!
+        if (p4.transform.position.y < 625)
+        {
+            p4out.gameObject.SetActive(true);
         }
     }
 }
